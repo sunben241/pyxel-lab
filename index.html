@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; base-uri &#39;none&#39;; object-src &#39;none&#39;; form-action &#39;none&#39;; script-src &#39;sha256-P3cqwdpvu/Z+PpHKFuS4cNFSR3/hkY0IERjjFseskHg=&#39; &#39;unsafe-eval&#39; &#39;wasm-unsafe-eval&#39; https://cdn.jsdelivr.net https://moon-jam.me; style-src &#39;unsafe-inline&#39; https://cdn.jsdelivr.net https://moon-jam.me; img-src https://cdn.jsdelivr.net https://moon-jam.me data: blob:; connect-src https://cdn.jsdelivr.net https://moon-jam.me; worker-src blob:; media-src blob:">
+<title>pyxel-project</title>
+<style>html,body{margin:0;background:#000;color:#fff;font-family:system-ui}#load-status{padding:2rem}</style>
+</head>
+<body>
+<p id="load-status">Loading Pyxel… Internet access is required. Click the game screen to play.</p>
+<script src="https://moon-jam.me/pyxel/wasm/releases/zip-9.2.0-1/pyxel.js" integrity="sha384-a+qjQZba0P6fUizQtvVLojLgRYMOY7NrufHqtyGpFSqFvVCDc+ODAHMqb2LRp7As" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+const status = document.getElementById("load-status");
+(async () => {
+  try {
+    if (typeof launchPyxel !== "function") {
+      throw new Error("Cannot load Pyxel. Connect to the internet and reopen this file.");
+    }
+    status.remove();
+    await launchPyxel({"command":"play","name":"game.pyxapp","gamepad":"enabled","base64":"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"});
+  } catch (error) {
+    status.textContent = "Unable to start game: " + error.message;
+    document.body.appendChild(status);
+  }
+})();
+</script>
+</body>
+</html>

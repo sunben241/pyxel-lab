@@ -1,0 +1,15 @@
+{
+  "generator": "pyxel-maker-pages",
+  "manifestVersion": 1,
+  "repositoryId": 1459502146,
+  "repository": "sunben241/pyxel-lab",
+  "sourceBranch": "main",
+  "sourceHead": "83d274fc8e2e233ad62f5efd3d4e71a7bbc86fb4",
+  "managedFiles": [
+    "index.html",
+    ".nojekyll",
+    ".pyxel-pages.json"
+  ],
+  "deploymentId": "1767f4c8-dca2-48b1-a63a-fcf3b93b7c3e",
+  "deployedAt": "2026-11-16T03:57:59.784Z"
+}
